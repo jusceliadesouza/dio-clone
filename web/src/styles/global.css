@@ -38,5 +38,5 @@ p {
 }
 
 .none {
-  @apply bg-transparent text-pink-700 hover:font-semibold hover:border hover:border-pink-700;
+  @apply bg-transparent text-white;
 }
