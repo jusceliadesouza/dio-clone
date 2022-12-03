@@ -22,6 +22,9 @@ module.exports = {
           600: "#565656",
         },
       },
+      fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
+      }
     },
   },
   plugins: [],

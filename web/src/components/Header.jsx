@@ -14,7 +14,6 @@ export function Header() {
     navigate("/cadastro");
   }
 
-
   return (
     <header className="bg-zinc-900">
       <div className="w-full max-w-[80%] h-12 my-0 mx-auto flex justify-between items-center">

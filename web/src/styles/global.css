@@ -3,14 +3,26 @@
 @tailwind utilities;
 
 body {
-  @apply bg-purple-900 text-zinc-300;
+  @apply bg-purple-900 text-white;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  @apply text-[2rem] font-bold;
+}
+
+p {
+  @apply text-[1rem]
+}
+
 .center {
   @apply flex items-center;
+}
+
+.focus {
+  @apply text-pink-700;
 }
 
 .button {
@@ -22,9 +34,9 @@ body {
 }
 
 .secondary {
-  @apply bg-pink-700 text-zinc-100;
+  @apply mt-4 max-w-[12rem] p-4 bg-pink-700 text-zinc-100 hover:bg-pink-800;
 }
 
 .none {
-  @apply bg-transparent text-pink-700 hover:font-semibold hover:border-pink-700
+  @apply bg-transparent text-pink-700 hover:font-semibold hover:border hover:border-pink-700;
 }
