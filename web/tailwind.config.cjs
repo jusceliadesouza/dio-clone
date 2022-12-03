@@ -9,6 +9,7 @@ module.exports = {
         },
         purple: {
           900: "#1E192C",
+          800: "#3B3450",
           700: "#8647AD",
         },
         pink: {
