@@ -1,7 +1,19 @@
-import {} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import { Button } from "../components/Button";
 
+
 export default function Login() {
-  return <Button title={"Home"} className={"button"} />;
+  const navigate = useNavigate();
+  
+  function handleBackToHome() {
+    navigate("/");
+  }
+  return (
+    <Button
+      onClick={handleBackToHome}
+      title={"Home"}
+      className={"button none"}
+    />
+  );
 }

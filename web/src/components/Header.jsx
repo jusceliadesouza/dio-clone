@@ -7,9 +7,13 @@ import logo from "../assets/dio.svg";
 export function Header() {
   const navigate = useNavigate();
 
-  function handleSignIn() {
+  function handleLoginIn() {
     navigate("/login");
   }
+  function handleSignIn() {
+    navigate("/cadastro");
+  }
+
 
   return (
     <header className="bg-zinc-900">
@@ -19,12 +23,12 @@ export function Header() {
           <span>Home</span>
 
           <Button
-            onClick={navigate(handleSignIn)}
+            onClick={handleLoginIn}
             title={"Entrar"}
             className={"button primary"}
           />
           <Button
-            onClick={navigate("#")}
+            onClick={handleSignIn}
             title={"Cadastrar"}
             className={"button primary"}
           />

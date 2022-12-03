@@ -24,3 +24,7 @@ body {
 .secondary {
   @apply bg-pink-700 text-zinc-100;
 }
+
+.none {
+  @apply bg-transparent text-pink-700 hover:font-semibold hover:border-pink-700
+}
