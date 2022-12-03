@@ -3,9 +3,24 @@
 @tailwind utilities;
 
 body {
-
   @apply bg-purple-900 text-zinc-300;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  @apply flex items-center;
+}
+
+.button {
+  @apply min-w-[7.5rem] w-full h-[1.56rem] center justify-center rounded-full cursor-pointer transition-all;
+}
+
+.primary {
+  @apply bg-zinc-600 text-zinc-300 hover:bg-transparent hover:text-zinc-100 hover:border;
+}
+
+.secondary {
+  @apply bg-pink-700 text-zinc-100;
 }
